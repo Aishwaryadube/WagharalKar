@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/PhotoGallery.js"></script>
+<style>
+    #img_url {
+        background: #ddd;
+        width: 100px;
+        height: 90px;
+        display: block;
+    }
+
+    #img_url1 {
+        background: #ddd;
+        width: 100px;
+        height: 90px;
+        display: block;
+    }
+</style>
+<input type="hidden" id="hdnId" />
+
+<label>Enter Title</label>
+<br />
+<input type="text" id="txtTitle" placeholder="Enter Title" class="form-control" />
+<br />
+<label>Insert Image</label>
+<br />
+<img src="" id="img_url" alt="your image">
+<br />
+<input type="file" id="file1" placeholder="Image" class="form-control" onChange="img_pathUrl(this)" ; />
+<br />
+
+<label>Insert Image</label>
+<br />
+<img src="" id="img_url1" alt="your image">
+<br />
+
+<input type="file" id="file2" placeholder="Image" class="form-control" onChange="img_pathUrl1(this)" ; />
+<br />
+<label>Enter Type</label>
+<br />
+<input type="text" id="txtType" placeholder="Enter Type" class="form-control" />
+<br />
+<label>CreateDate</label>
+<br />
+<input type="date" id="txtCreateDate" class="form-control" />
+<br />
+<label>UpdateDate</label>
+<br />
+<input type="date" id="txtUpdateDate" class="form-control" />
+<br />
+<label>Created By</label>
+<br />
+<input type="number" id="txtCreatedBy" placeholder="Created By" class="form-control" />
+<br />
+<label>Updated By</label>
+<br />
+<input type="number" id="txtUpdatedBy" placeholder="Updated By" class="form-control" />
+<br />
+<input type="button" value="Submit" class="form-control" onclick="savephoto()" />
+<br />
+
+<label>Search</label>
+
+<input type="search" id="txtserch"/>
+<input type="button" value="Search" onclick="getPhotolist()" />
+<br />
+
+<br />
+<div>
+    <table id="tblPhotoGallery" border="1" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Image1</th>
+                <th>Image2</th>
+                <th>Type</th>
+                <th>UpdateDate</th>
+                <th>CreateDate</th>
+                <th>CreatedBy</th>
+                <th>UpdatedBy</th>
+
+
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>

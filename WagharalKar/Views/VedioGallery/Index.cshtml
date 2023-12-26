@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+<script src="~/Content/Pages/VedioGallery.js"></script>
+<input type="hidden" id="hdnId" />
+<label>Enter Title</label>
+<br />
+<input type="text" id="txtTitle" placeholder="Enter Titile" class="form-control" />
+<br />
+<label>YouTube Url</label>
+<br />
+<input type="text" id="txtYoutubeUrl" placeholder="Enter Url" class="form-control" />
+<br />
+<label>Enter Type</label>
+<br />
+<input type="text" id="txtType" placeholder="Enter Type" class="form-control" />
+<br />
+<label>Create Date</label>
+<br />
+<input type="date" id="txtCreateDate" class="form-control" />
+<br />
+<label>UpdateDate</label>
+<br />
+<input type="date" id="txtUpdateDate" class="form-control" />
+<br />
+<label>Enter Created By</label>
+<br />
+<input type="number" id="txtCreatedBy" class="form-control" />
+<br />
+<label>Updated By</label>
+<br />
+<input type="number" id="txtUpdatedBy" class="form-control" />
+<br />
+<input type="button" value="Submit" class="form-control" onclick="savevedio()" />
+
+
+<br />
+<table id="tblVideoGallery" border="1" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>YouTubeUrl</th>
+            <th>Type</th>
+            <th>CreateDate</th>
+            <th>UpdateDate</th>
+            <th>CreatedBy</th>
+            <th>UpdatedBy</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+

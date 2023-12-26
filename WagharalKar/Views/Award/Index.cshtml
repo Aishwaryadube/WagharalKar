@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/Award.js"></script>
+<input type="hidden" id="txthid" />
+<label>Enter Title</label>
+<br />
+<input type="text" id="txtTitle" placeholder="Enter Title" class="form-control" />
+<br />
+<label>Enter Details</label>
+<br />
+<input type="text" id="txtDetails" placeholder="Enter Details" class="form-control" />
+<br />
+<label>Select Img</label>
+<br />
+
+<input type="text" id="txtImage1" placeholder="Insert Img" class="form-control" />
+<br />
+<label>Select Img</label>
+<br />
+
+<input type="text" id="txtImage2" placeholder="Insert Img" class="form-control" />
+<br />
+<label>Enter Type</label>
+<br />
+
+<input type="text" id="txtType" placeholder="Enter Type" class="form-control" />
+<br />
+<label>Enter Date</label>
+<br />
+<br />
+<input type="date" id="txtDate" placeholder="Enter Date" class="form-control" />
+<br />
+<label>Select Create Date</label>
+<br />
+<input type="date" id="txtCreateDate" placeholder="Enter Date" class="form-control" />
+<br />
+<label>Select Update Date</label>
+<input type="date" id="txtUpdateDate" placeholder="Enter Date" class="form-control" />
+<br />
+<label>Enter Created By</label>
+<br />
+<input type="number" id="txtCreatedBy" placeholder="Enter Number" class="form-control" />
+<br />
+<label>Enter Created By</label>
+<br />
+<input type="number" id="txtUpdatedBy" placeholder="Enter Number" class="form-control" />
+<br />
+<input type="button" value="Submit" class="form-control" onclick="saveaward()" />
+<br />
+
+<div>
+    <table id="tblAward" border="1" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Details</th>
+                <th>Image1</th>
+                <th>Image2</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>CreateDate</th>
+                <th>UpdateDate</th>
+                <th>CreatedBy</th>
+                <th>UpdatedBy</th>
+
+
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
